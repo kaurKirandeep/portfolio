@@ -86,8 +86,8 @@
 			</header>
 			<p>Under this project, user guesses the word and if its correct the letter appears instead of dash and if
 				its wrong the parts of user cutts off and it has to be gueesed within five guesses.</p>
-			<a href="https://github.com/kaurKirandeep/hangman/tree/main/hangman" class="button style2 scrolly readmore"
-				download>More</a>
+			<a href="https://github.com/kaurKirandeep/hangman/tree/main/hangman" target="_blank"
+				class="button style2 scrolly readmore" download>More</a>
 		</div>
 	</article>
 
@@ -395,6 +395,19 @@
 	<script src="assets/js/main.js"></script>
 
 </body>
+<script>
+	window.onscroll = function () { myFunction() };
 
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop;
+
+	function myFunction() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		} else {
+			header.classList.remove("sticky");
+		}
+	}
+</script>
 
 </html>
