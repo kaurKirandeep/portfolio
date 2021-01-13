@@ -2679,3 +2679,7 @@ input, select, textarea {
 	  .inner.education {
 		margin-left: 0!important;
 	}
+	html
+	{
+	scroll-behavior: smooth;
+	}
